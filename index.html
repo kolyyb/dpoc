@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dspoc</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="fetchPocs()">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="#">Lab |Damn Small Piece of Codes</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+
+            </div>
+            <!--/.navbar-collapse -->
+        </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Damn small piece of codes</h1>
+            <p>Petite application web “aide-mémoire” de sauvegarde de bouts de code à réutiliser. Plutôt que d’aller les chercher constamment sur Google et de trier, rassemblons ce que je réutilise souvent en un seul et même endroit facilement accessible
+                en local.</p>
+        </div>
+    </div>
+    <div class="formDiv">
+        <div id="emptyInput" class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span> Il faut remplir tous les champs du formulaire !
+        </div>
+
+        <div id="fullInput" class="alert alert-success" role="alert">
+            <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span> Code soumis avec succès !
+        </div>
+
+        <form id="mainForm">
+            <p><input type="text" id="titleValue" class="form-control" name="inputForm" placeholder="Un titre pour ce bout de code..."></textarea>
+            </p>
+            <p><textarea id="codeValue" class="form-control" name="areaForm" rows="5" placeholder="Le bout de code..."></textarea></p>
+            <p><button class="btn btn-primary btn-sm" type="submit">Pin le bout de code !</button></p>
+        </form>
+    </div>
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div id="pocShow" class="wel col-md-8 col-md-offset-2"></div>
+        </div>
+
+
+        <hr>
+
+        <footer>
+            <p>&copy; 2017 Lab of Codes, Ka.</p>
+        </footer>
+    </div>
+    <!-- /container -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+</html>
