@@ -17,5 +17,6 @@ J'ai utilisé ici la technologie localStorage.
 > - **node / express** pour le serveur (il en faut un pour que localStorage fonctionne sur le navigateur).
 > - **jQuery** pour quelques petites touches cosmétiques.
 > - **Bootstrap** pour le css.
+
 Todo
 > - Ajouter les fonctionnalités de suppression / édition d'une entrée.
